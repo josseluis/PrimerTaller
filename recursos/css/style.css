@@ -1,0 +1,455 @@
+*{ box-sizing: border-box; }/*esta propiedad mantiene el ancho en lo que uno le especifique independientemente del padding que tenga el elemento*/
+body{
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.home-wrapper{
+
+	background: linear-gradient(rgba(48, 48, 48, 0.6), rgba(48, 48, 48, 0.6)) ,url('../imagen/fondo.jpg') no-repeat center top;
+	background-size: cover;
+	color: white;
+
+}
+
+header{
+
+  position: absolute;/*fixed, relative-- también*/
+	padding: 10px 0;
+	width: 100%;
+	background-color: rgba(28,32,132, 0.6);
+}
+header img{
+
+	width: 200px;
+}
+
+header nav{
+
+	float: right;
+	margin-top: 10px;
+}
+
+header nav a{
+
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 15px;
+
+}
+
+header nav a.active{
+
+	background: #FED136;
+	border-radius: 3px;
+
+}
+
+#home{
+
+	text-align: center;
+	padding: 200px 0 150px;
+}
+
+#home h1{
+
+	font-size: 68px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-bottom: 40px;
+  -webkit-box-shadow: 10px -9px 39px 16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px -9px 39px 16px rgba(0,0,0,0.75);
+  box-shadow: 10px -9px 39px 16px rgba(0,0,0,0.75);
+}
+
+#home .divider{
+/*linea amarilla*/
+	width: 80px;
+	border-top: 5px solid #FED136;
+	margin: 0 auto;
+}
+
+#home p{
+
+	font-size: 24px ;
+	margin-top: 40px;
+	color:whitesmoke;
+}
+
+/*para los iconos */
+#home .social{
+
+    margin-top: 35px;
+
+}
+/*para los iconos parte redondeada*/
+#home .social a{
+
+	color:white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 24px;
+	font-weight: bold;;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	/*efecto para hacer que al camniar de color los iconos sea más lento*/
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all;
+}
+/*PARA QUE LOS ICONOS SE VUELVAN AMARILLOS AL PASAR EL MOUSE*/
+#home .social a:hover{
+
+	background-color: #FED136;
+}
+
+
+#servicios{
+	
+	background-color: whitesmoke;
+	width: 100%;
+}
+
+#servicios .box{
+
+     display: inline-block;
+     text-align: center;
+     width: 33%;
+     padding: 10px;
+     background-color: white;
+}
+
+#video{
+
+	background-color: powderblue;
+	text-align: center;
+	padding: 30px 0;
+}
+
+#video .box{
+  
+     display: inline-block;
+     text-align: center;
+     width: 33%;
+     padding: 10px;
+     background-color: white;
+     margin: 1%;
+}
+
+
+#portafolio{
+
+	background-color: whitesmoke;
+
+}
+
+#portafolio .box{
+     display: inline-block;
+     text-align: center;
+     width: 31%;
+     margin: 1%;
+     background-color: white;
+
+}
+
+#portafolio .box img{
+
+	width: 100%; /*el ancho es del 100% para que no se vaya a desbordar*/
+}
+
+
+#portafolio .box p{
+   color:#666;
+   padding: 10px;
+
+}
+
+
+section.success {
+    color: #000000;
+    background: #E6E6FA;
+    
+}
+
+
+
+
+#portafolio1{
+
+	background-color: whitesmoke;
+
+}
+
+#portafolio1 .box{
+     display: inline-block;
+     text-align: center;
+     width: 31%;
+     margin: 1%;
+     background-color: white;
+
+}
+
+
+
+#portafolio1 .box img{
+
+	width: 100%; /*el ancho es del 100% para que no se vaya a desbordar*/
+}
+
+
+#portafolio1 .box p{
+   color:#666;
+   padding: 10px;
+
+}
+
+#contacto{
+
+	background-color: #303030;
+	background-image: url('../imagen/map-image.png');
+/*	background-position: center;*/
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+#contacto h2{
+
+	color: white;
+
+}
+
+#contacto input{
+
+	padding: 20px;
+	width: 400px;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+}
+
+
+#contacto textarea{
+    
+    padding: 20px;
+	width: 400px;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin: 20px 0;
+
+	
+}
+
+#contacto button{
+
+	background-color:  #FED136;
+	padding: 20PX 40PX;
+	border-color: #FED136;
+	border-radius: 4px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+footer{
+
+	padding: 100px 0;
+	text-align: center;
+	font-size: 25px;
+	background-color: rgba(28,32,132,0.8);
+	/*position:absolute;*/
+}
+
+section{
+
+	padding: 80px 0;
+}
+
+section h2{
+
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+/*para centrar divs*/
+.container{
+
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+
+
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#F6AA93;
+}
+form h1 {
+  font-size: 18px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:center;
+}
+
+form {
+  border-radius: 5px;
+  max-width:700px;
+  width:100%;
+  margin: 5% auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+p span {
+  color: #F00;
+}
+
+p {
+  margin: 0px;
+  font-weight: 500;
+  line-height: 2;
+  color:#333;
+}
+
+#h11 {
+  text-align:center; 
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 75%;
+  height: 40px;
+  float: left;
+  padding: 0px 15px;
+}
+
+a {
+  text-decoration:inherit
+}
+
+textarea {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #EEE;
+  margin: 0;
+  width: 75%;
+  height: 130px; 
+  float: left;
+  padding: 0px 15px;
+}
+
+.form-group {
+  overflow: hidden;
+  clear: both;
+}
+
+.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background:#eeeeee;
+  height:42px;
+  position: relative;
+  text-align: center;
+  line-height:40px;
+}
+
+i {
+  color:#555;
+}
+
+.contentform {
+  padding: 40px 30px;
+}
+
+.bouton-contact{
+  background-color: #81BDA4;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  border:0;
+  padding: 17px 25px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.leftcontact {
+  width:49.5%; 
+  float:left;
+  border-right: 1px dotted #CCC;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+  width:49.5%;
+  float:right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
+
+.validation {
+  display:none;
+  margin: 0 0 10px;
+  font-weight:400;
+  font-size:13px;
+  color: #DE5959;
+}
+
+#sendmessage {
+  border:1px solid #fff;
+  display:none;
+  text-align:center;
+  margin:10px 0;
+  font-weight:600;
+  margin-bottom:30px;
+  background-color: #EBF6E0;
+  color: #5F9025;
+  border: 1px solid #B3DC82;
+  padding: 13px 40px 13px 18px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+#sendmessage.show,.show  {
+  display:block;
+}
+
+
+#container12 {
+  margin: auto;
+  background: #eaeaea;  
+  font-family: 'Open Sans', sans-serif;
+}
